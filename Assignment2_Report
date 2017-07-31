@@ -1,0 +1,19 @@
+1. Our program does not output any garbage values.
+2. All the produced values are getting consumed.
+  
+Our code has 3 functions:
+1. The main function first sets the default count value as 2000, if any valid integer is given as a commandline argument it updates the count value to that of the integer. Now it creates processes producer and consumer using the XINU system call create. It alternatively suspends and resumes both the processes until they terminate. 
+  
+2. The producer function increments the n value starting from 1 and stores the value in the global variable n.
+  
+3. The consumer function acceses the global variable n and displays it.
+  
+Our Team consist of :
+1. Shweta Bhartia (sbhartia)
+2. Kavya guruprasad (prasadk)
+  
+We both created and debugged the code together.
+
+sbhartia was responsible for creating the library files and prodcons.c and editing the xinu shell file.
+
+prasadk was responsible for creating the producer.c and consumer.c .
